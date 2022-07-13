@@ -1,0 +1,9 @@
+/home/crimsoft/projects/near/rust_smart_contract/integration-tests/rs/target/debug/deps/near_network_primitives-d3f8cfa18622615a.rmeta: /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/near-network-primitives-0.12.0/src/lib.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/near-network-primitives-0.12.0/src/config.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/near-network-primitives-0.12.0/src/network_protocol/mod.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/near-network-primitives-0.12.0/src/network_protocol/edge.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/near-network-primitives-0.12.0/src/types.rs
+
+/home/crimsoft/projects/near/rust_smart_contract/integration-tests/rs/target/debug/deps/near_network_primitives-d3f8cfa18622615a.d: /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/near-network-primitives-0.12.0/src/lib.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/near-network-primitives-0.12.0/src/config.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/near-network-primitives-0.12.0/src/network_protocol/mod.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/near-network-primitives-0.12.0/src/network_protocol/edge.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/near-network-primitives-0.12.0/src/types.rs
+
+/home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/near-network-primitives-0.12.0/src/lib.rs:
+/home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/near-network-primitives-0.12.0/src/config.rs:
+/home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/near-network-primitives-0.12.0/src/network_protocol/mod.rs:
+/home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/near-network-primitives-0.12.0/src/network_protocol/edge.rs:
+/home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/near-network-primitives-0.12.0/src/types.rs:

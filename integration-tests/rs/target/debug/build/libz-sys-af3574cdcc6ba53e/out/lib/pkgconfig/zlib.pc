@@ -1,0 +1,13 @@
+prefix=/home/crimsoft/projects/near/rust_smart_contract/integration-tests/rs/target/debug/build/libz-sys-af3574cdcc6ba53e/out
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+sharedlibdir=@sharedlibdir@
+includedir=@includedir@
+
+Name: zlib
+Description: zlib compression library
+Version: @VERSION@
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

@@ -1,4 +1,4 @@
-near-blank-project
+Smart contracts written in RUST for the NEAR Blockchain Protocol
 ==================
 
 This [React] app was initialized with [create-near-app]

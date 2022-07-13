@@ -1,0 +1,11 @@
+/home/crimsoft/projects/near/rust_smart_contract/integration-tests/rs/target/debug/deps/arrayvec-a218e7bda56e386b.rmeta: /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/lib.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/maybe_uninit_stable.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/array.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/array_string.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/char.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/range.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/errors.rs
+
+/home/crimsoft/projects/near/rust_smart_contract/integration-tests/rs/target/debug/deps/arrayvec-a218e7bda56e386b.d: /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/lib.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/maybe_uninit_stable.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/array.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/array_string.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/char.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/range.rs /home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/errors.rs
+
+/home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/lib.rs:
+/home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/maybe_uninit_stable.rs:
+/home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/array.rs:
+/home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/array_string.rs:
+/home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/char.rs:
+/home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/range.rs:
+/home/crimsoft/.cargo/registry/src/github.com-1ecc6299db9ec823/arrayvec-0.4.12/src/errors.rs:
