@@ -42,20 +42,20 @@ impl Counter {
         self.value
     }
 
-    // return contract/wallet address
+    // return contract/wallet address - call function
     pub fn return_wallet_address (&self) -> String {
         let c_address = env::signer_account_id().to_string();
         c_address
     }
 
-    // return gas cost
+    // return gas cost - call function
     pub fn return_gas_details (&self) -> (Gas, Gas) {
         let available_gas= env::prepaid_gas();
         let gas_used = env::used_gas();
         (available_gas, gas_used)
     }
 
-    // return attached deposit
+    // return attached deposit - call function
     #[payable]
     pub fn return_near_bal (&mut self) -> u128 {
         env::attached_deposit()
