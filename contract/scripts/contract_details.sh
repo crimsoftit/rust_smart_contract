@@ -3,6 +3,9 @@
 # read value
 near view test.crimsoft.testnet read_value
 
+# read counter - implemented using the lookUpMap data type
+near call test.crimsoft.testnet read_lookup_count '{}' --accountId crimsoft1.testnet
+
 # return contract/wallet address
 near call test.crimsoft.testnet return_wallet_address --accountId crimsoft1.testnet
 

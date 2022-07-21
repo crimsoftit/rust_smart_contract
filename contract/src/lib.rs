@@ -2,14 +2,15 @@
 
 use near_sdk::borsh::{ self, BorshDeserialize, BorshSerialize };
 use near_sdk::{ env, near_bindgen, Gas };
-use near_sdk::collections::Vector;
+use near_sdk::collections::{Vector, LookupMap};
 
 
 #[near_bindgen]
 #[derive(Debug, BorshDeserialize, BorshSerialize)]
 pub struct Counter {
     value: u32,
-    names: Vec<String>
+    names: Vec<String>,
+    count: LookupMap<String, u64>
 }
 
 
@@ -17,7 +18,8 @@ impl Default for Counter {
     fn default () -> Self {
         Self {
             value: 0,
-            names: vec![]
+            names: vec![],
+            count: LookupMap::new(b"c")
         }
     }
 }
@@ -42,6 +44,42 @@ impl Counter {
     pub fn pop_name(&mut self) -> bool {
         self.names.pop();
         true
+    }
+
+    pub fn read_lookup_count (&self) -> u64 {
+        let signer: String = env::signer_account_id().to_string();
+        match self.count.get(&signer) {
+            Some (counter) => counter,
+            None => 0
+        }
+    }
+
+    pub fn increment_counter (&mut self) -> u64 {
+        let signer = env::signer_account_id();
+        let counter = 0;
+        if let Some(mut counter) = self.count.get(&signer.to_string()) {
+            counter += 1;
+            self.count.insert(&signer.to_string(), &counter);
+            counter
+        } else {
+            let new_count = counter + 1;
+            self.count.insert(&signer.to_string(), &new_count);
+            new_count
+        }
+    }
+
+    pub fn decrement_counter (&mut self) -> u64 {
+        let signer = env::signer_account_id();
+        if let Some(mut counter) = self.count.get(&signer.to_string()) {
+            let mut new_count = 0;
+            if counter > 0{
+                new_count = counter - 1;
+                self.count.insert(&signer.to_string(), &new_count);
+            }
+            new_count
+        } else {
+            0
+        }
     }
  
     // view function: reads the state of the blockchain
