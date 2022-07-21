@@ -2,20 +2,22 @@
 
 use near_sdk::borsh::{ self, BorshDeserialize, BorshSerialize };
 use near_sdk::{ env, near_bindgen, Gas };
-
+use near_sdk::collections::Vector;
 
 
 #[near_bindgen]
 #[derive(Debug, BorshDeserialize, BorshSerialize)]
 pub struct Counter {
-    value: u32
+    value: u32,
+    names: Vec<String>
 }
 
 
 impl Default for Counter {
     fn default () -> Self {
         Self {
-            value: 0
+            value: 0,
+            names: vec![]
         }
     }
 }
@@ -23,6 +25,25 @@ impl Default for Counter {
 #[near_bindgen]
 impl Counter {
 
+    pub fn save_name (&mut self, name: String) -> String {
+        self.names.push(name.to_string());
+        name.to_string()
+    }
+
+    pub fn get_names (&self) -> Vec<String> {
+        let mut dem_names: Vec<String> = vec![];
+
+        for name in self.names.iter() {
+            dem_names.push(name.to_string());
+        }
+        dem_names
+    }
+
+    pub fn pop_name(&mut self) -> bool {
+        self.names.pop();
+        true
+    }
+ 
     // view function: reads the state of the blockchain
     pub fn read_value (&self) -> u32 {
         self.value
